@@ -58,8 +58,17 @@ a:hover {
 #now-playing,
 #menu,
 #locate-us,
-#about-us {
+#about-us,
+#locate-us {
     justify-content: center;
 }
 
 #now-playing {}
+
+#plan-your-trip-header {
+    justify-content: center;
+}
+
+#plan-your-trip {
+    justify-content: space-around;
+}
