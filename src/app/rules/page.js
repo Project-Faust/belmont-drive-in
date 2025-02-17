@@ -9,8 +9,9 @@ export default function Rules() {
                 <h3 className="text-2xl mb-5">Please take a moment to familiarize yourself with how we operate.</h3>
             </div>
 
-            <div>
+            <div className="">
                 <img
+                    className=""
                     src="/images/2024-rules.webp"
                     alt="Rules & Regulations"
                 />
