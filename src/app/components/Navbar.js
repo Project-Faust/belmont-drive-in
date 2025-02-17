@@ -24,7 +24,12 @@ export default function Navbar() {
             </div>
 
             <div className="navbar-center">
-                <a className="btn btn-ghost text-xl">Belmont Drive-In</a>
+                <a
+                    className="btn btn-ghost text-xl"
+                    href="/"
+                >
+                    Belmont Drive-In
+                </a>
             </div>
 
             <div className="navbar-end"
