@@ -9,7 +9,7 @@ export default function Faq() {
             </div>
 
             <div className="flex justify-center">
-                <ul className="mx-2 mt-5 mb-2">
+                <ul className="text-lg mx-2 mt-5 mb-2">
                     <li>Q: Do you take card or tap-to-pay?</li>
                     <li>A: Not at this time.</li>
                     <br />
