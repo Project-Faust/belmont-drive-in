@@ -1,28 +1,35 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar.js";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Footer from "./components/Footer";
 
 export const metadata = {
   title: "Belmont Drive-In",
   description: "Family owned and operated since 1983, the Belmond Drive-In Theatre offers an oppoortunity for recreation for all ages.",
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+    shortcut: '/favicon-32x32.png',
+  },
+  manifest: '/site.webmanifest',
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en"
+    data-theme="dracula">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" type="image/x-icon" />
+        <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+      </head>
+      <body className="flex flex-col min-h-screen">
         <Navbar></Navbar>
-        {children}
+        <main className="flex-grow">
+          {children}
+        </main>
+        <Footer></Footer>
       </body>
     </html>
   );
