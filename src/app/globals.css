@@ -3,6 +3,10 @@
 @tailwind utilities;
 @plugin "daisyui";
 
+.cursor-default {
+  cursor:default;
+}
+
 /* :root {}
 
 @media (prefers-color-scheme: dark) {
