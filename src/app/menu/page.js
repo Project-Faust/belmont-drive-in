@@ -8,12 +8,19 @@ export default function Menu() {
                 <h2 className="text-3xl mb-5">
                     <strong>Menu</strong>
                 </h2>
-                <h3 className="text-2xl mb-5">Allergy Warnings & Diet Considerations</h3>
+                <h3 className="text-2xl mb-5">
+                    <a
+                        href="#allergies-and-diet"
+                        className="text-blue-600 hover:underline"
+                    >
+                        Allergy Warnings & Diet Considerations
+                    </a>
+                </h3>
             </div>
 
-            <section className="flex">
+            <section className="flex flex-col items-center">
 
-                <div className="px-12 mb-5">
+                <div className="flex-auto px-12 mb-5">
                     <img
                         className=""
                         src="/images/menu-downscaled.webp"
@@ -21,8 +28,9 @@ export default function Menu() {
                     />
                 </div>
 
-                <div className="px-12 mb-5">
+                <div className="flex-auto px-12 mb-5">
                     <img
+                        id="allergies-and-diet"
                         className=""
                         src="/images/2024-food-allergies.webp"
                         alt="Food Allergies"
