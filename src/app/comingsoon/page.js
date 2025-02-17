@@ -8,20 +8,18 @@ export default function NowPlaying() {
         <section className="min-h-screen flex flex-col items-center justify-start py-12">
 
             <div className="text-center mb-12">
-                <h2 className="text-3xl font-bold">
+                <h2 className="text-3xl">
                     <strong>Coming soon!</strong>
                 </h2>
             </div>
 
-            {/* movie cards map */}
-            <div className="w-full max-w-screen-xl px-4">
+            <div className="flex w-full max-w-screen-xl px-4">
                 <section className="grid gap-8 grid-cols-1 sm:grid-cols-2 justify-items-center mx-auto">
                     {comingSoon.map((res, index) => (
                         <div
-                            className="bg-white shadow-lg rounded-lg p-4 transition-transform transform hover:scale-105"
+                            className="flex-auto bg-white shadow-lg rounded-lg p-4 transition-transform transform hover:scale-105"
                             key={index}
                         >
-                            {/* movie title */}
                             <div className="text-center mb-4">
                                 <a
                                     href={res.imdb}
@@ -33,7 +31,6 @@ export default function NowPlaying() {
                                 </a>
                             </div>
 
-                            {/* movie poster */}
                             <div className="flex justify-center">
                                 <a
                                     href={res.imdb}
@@ -52,10 +49,13 @@ export default function NowPlaying() {
                                     </p>
                                 </a>
                             </div>
+
                         </div>
+
                     ))}
                 </section>
             </div>
+
         </section>
 
     );
