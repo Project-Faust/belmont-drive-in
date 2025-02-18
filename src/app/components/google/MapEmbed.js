@@ -1,11 +1,10 @@
 export default function MapEmbed() {
     return (
         <section>
-            <div className="d-flex justify-content-center align-items-center mx-3 mt-3 mw-100">
+            <div className="d-flex justify-content-center align-items-center mx-3 mt-3 min-w-screen">
                 <iframe
                     title="google map embed"
-                    width="600"
-                    height="450"
+                    className="w-full h-[300px] sm:h-[400px] md:h-[450px] rounded-lg"
                     style={{ border: 0 }}
                     loading="lazy"
                     allowFullScreen
