@@ -1,4 +1,4 @@
-export default function MapsEmbed() {
+export default function MapEmbed() {
     return (
         <section>
             <div className="d-flex justify-content-center align-items-center mx-3 mt-3 mw-100">
