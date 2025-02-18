@@ -1,3 +1,5 @@
+import MapsEmbed from "./components/google/mapsEmbed";
+
 export default function Home() {
   return (
 
@@ -39,13 +41,17 @@ export default function Home() {
           </li>
           <br />
           <li className="">
-            We have one screen and we play two movies each night we're open. <br />This means that we always play one movie after another with a brief intermission between the two.
+            We have one screen and <strong>we play two movies each</strong> night we're open. <br />We always play <strong>one movie after another</strong> with a brief intermission in between.
           </li>
           <br />
           <li>
             Our <strong>first movie starts</strong> after the sun dips below the horizon. <br /> Our earliest movie start time will be <strong>no sooner than 7:30PM</strong>.
           </li>
         </ul>
+      </section>
+
+      <section>
+        <MapsEmbed></MapsEmbed>
       </section>
 
     </div>
