@@ -1,5 +1,5 @@
-import MapsEmbed from "./components/google/MapsEmbed";
-import AlertInfo from "./components/ui/AlertInfo";
+import MapsEmbed from "./components/google/MapsEmbed.js";
+import AlertInfo from "./components/ui/AlertInfo.js";
 import BusinessDetails from "./components/BusinessDetails";
 
 export default function Home() {
