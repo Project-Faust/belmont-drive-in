@@ -1,7 +1,7 @@
 export default function MapEmbed() {
     return (
         <section>
-            <div className="bg-neutral d-flex justify-content-center align-items-center mx-3 mt-3 min-w-screen">
+            <div className="d-flex justify-content-center align-items-center mx-3 mt-3 min-w-screen">
                 <iframe
                     title="google map embed"
                     className="aspect-square h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px] rounded-lg"
