@@ -1,8 +1,6 @@
 export default function Footer() {
     return (
-
         <footer className="bg-neutral text-neutral-content px-5 py-0 flex flex-col md:flex-row justify-between items-center">
-            {/* Left Section */}
 
             <aside className="mb-4 md:mb-0 text-center md:text-left">
                 <p>
@@ -12,7 +10,6 @@ export default function Footer() {
                 </p>
             </aside>
 
-            {/* Right Section */}
             <nav className="flex flex-col items-center">
                 <h6 className="footer-title mb-2">Social</h6>
                 <div className="flex gap-2 pb-2">
