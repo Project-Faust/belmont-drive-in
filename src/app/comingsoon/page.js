@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function NowPlaying() {
     return (
-        <section className="flex flex-col items-center justify-start w-full">
+        <section className="flex flex-col items-center justify-start w-full mb-5">
 
             <div className="text-center my-5">
                 <h2 className="text-3xl font-bold">Coming Soon!</h2>
