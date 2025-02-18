@@ -19,6 +19,7 @@ export default {
   daisyui: {
     themes: [
       "retro",
+      "synthwave",
       "light",
       "dark"
     ],

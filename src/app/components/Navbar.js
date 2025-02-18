@@ -26,7 +26,7 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav className="navbar bg-neutral text-neutral-content shadow-sm">
+        <nav className="bg-secondary text-secondary-content navbar bg-neutral text-neutral-content shadow-sm">
             <div className="navbar-start">
                 <div ref={dropdownRef} className={`dropdown ${isOpen ? "dropdown-open" : ""}`}>
                     <button
@@ -56,7 +56,7 @@ export default function Navbar() {
                     {isOpen && (
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-neutral rounded-box z-10 mt-3 w-52 p-2 shadow"
+                            className="menu menu-sm dropdown-content bg-neutral text-neutral-content rounded-box z-10 mt-3 w-52 p-2 shadow"
                         >
                             {[
                                 { href: "/", label: "Home" },

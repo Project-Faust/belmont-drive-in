@@ -13,7 +13,7 @@ export default function NowPlaying() {
                 <section className="grid grid-cols-1 sm:grid-cols-2 gap-10 w-full justify-items-stretch flex-grow">
                     {comingSoon.map((movie, index) => (
                         <div
-                            className="bg-primary text-primary-content shadow-lg rounded-lg p-5 h-full flex flex-col justify-between transition-transform transform hover:scale-105 w-full"
+                            className="bg-neutral text-neutral-content shadow-lg rounded-lg p-5 h-full flex flex-col justify-between transition-transform transform hover:scale-105 w-full"
 
                             key={index}
                         >
