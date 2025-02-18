@@ -9,19 +9,20 @@ export default function Home() {
         <h1 className="text-2xl">Home of Your Affordable Family Entertainment Center</h1>
       </header>
 
-      <section className="flex justify-center my-5">
+      <section className="flex flex-col justify-center my-5">
         <AlertInfo />
       </section>
 
-      <div className="flex flex-col md:flex-row justify-evenly items-center">
+      <div className="flex flex-col lg:flex-row justify-evenly items-center">
         <main className="mx-2">
           <BusinessDetails />
         </main>
 
-        <section className="flex">
+        <div className="flex">
           <MapsEmbed />
-        </section>
+        </div>
       </div>
+
     </div>
   );
 }
