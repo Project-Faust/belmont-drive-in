@@ -3,12 +3,13 @@ import Image from "next/image";
 
 export default function NowPlaying() {
     return (
-        <section className="h-screen flex flex-col items-center justify-start w-full">
+        <section className="flex flex-col items-center justify-start w-full">
+
             <div className="text-center my-5">
                 <h2 className="text-3xl font-bold">Now Playing!</h2>
             </div>
 
-            <div className="w-full max-w-screen-xl px-8 h-[85vh] flex">
+            <div className="w-full max-w-screen-xl px-8 flex">
                 <section className="grid grid-cols-1 sm:grid-cols-2 gap-10 w-full justify-items-stretch flex-grow">
                     {nowPlaying.map((movie, index) => (
                         <div
@@ -60,6 +61,7 @@ export default function NowPlaying() {
                     ))}
                 </section>
             </div>
+
         </section>
     );
 }
