@@ -1,12 +1,16 @@
 
 // eslint-disable-next-line
+/*
+
 const template = [
-    // {
-    //     title: "",
-    //     image: require(""),
-    //     imdb: "",
-    // }
+    {
+        title: "",
+        image: require(""),
+        imdb: "",
+    }
 ]
+
+*/
 
 export const nowPlaying = [
     {
