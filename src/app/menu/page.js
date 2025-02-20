@@ -8,14 +8,18 @@ export default function Menu() {
 
             <div className="text-center mb-12">
 
-                <h2 className="text-3xl mb-5">
+                <h2
+                    style={{ color: "#FFFFFF" }}
+                    className="text-3xl mb-5">
                     <strong>Menu</strong>
                 </h2>
 
-                <h3 className="text-2xl mb-5">
+                <h3
+                    style={{backgroundColor: "#ffffff", color: "#aa0000" }}
+                    className="text-2xl py-1 px-5 mb-5 rounded-lg">
                     <a
                         href="#allergies-and-diet"
-                        className="hover:underline"
+                        className="font-semibold hover:underline"
                     >
                         Allergy Warnings & Diet Considerations
                     </a>
@@ -62,7 +66,6 @@ export default function Menu() {
             ))}
 
             <section className="flex flex-col items-center">
-                {/* Allergy Information */}
                 <div className="w-full max-w-3xl mx-auto mb-8">
                     <img
                         id="allergies-and-diet"

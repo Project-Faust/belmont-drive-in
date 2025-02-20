@@ -1,19 +1,22 @@
 import { nowPlaying } from "./data";
 import Image from "next/image";
 
-export default function NowPlaying() {
+export default function ComingSoon() {
     return (
-        <section className="flex flex-col items-center justify-start w-full mb-5">
+        <section className="flex flex-col items-center justify-start w-full mb-0">
 
-            <div className="text-center my-5">
-                <h2 className="text-3xl font-bold">Now Playing!</h2>
+            <div
+                style={{ color: "#FFFFFF" }}
+                className="text-center my-3">
+                <h2 className="text-2xl font-bold">Now Playing!</h2>
             </div>
 
-            <div className="w-full max-w-screen-xl px-8 flex">
+            <div className="w-full max-w-screen-xl px-8 mb-2 flex">
                 <section className="grid grid-cols-1 sm:grid-cols-2 gap-10 w-full justify-items-stretch flex-grow">
                     {nowPlaying.map((movie, index) => (
                         <div
-                            className="bg-neutral text-neutral-content shadow-lg rounded-lg p-5 h-full flex flex-col justify-between transition-transform transform hover:scale-105 w-full"
+                            style={{ backgroundColor: "#303080" }}
+                            className="shadow-lg rounded-lg p-2 h-full flex flex-col justify-between transition-transform transform hover:scale-105 w-full"
 
                             key={index}
                         >
@@ -23,7 +26,7 @@ export default function NowPlaying() {
                                         href={movie.imdb}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="text-lg text-blue-600 hover:underline"
+                                        className="text-lg text-white hover:underline"
                                     >
                                         <h1 className="font-semibold">{movie.title}</h1>
                                     </a>
@@ -61,7 +64,6 @@ export default function NowPlaying() {
                     ))}
                 </section>
             </div>
-
         </section>
     );
 }

@@ -31,7 +31,9 @@ export default function BusinessDetails() {
     ];
 
     return (
-        <ul className="text-xl text-center mx-2 mt-5 mb-2 space-y-4">
+        <ul 
+        style={{color: "#FFFFFF"}}
+        className="text-xl text-center mx-2 mt-5 mb-2 space-y-4">
             {details.map((item, index) => (
                 <li key={index} className="p-2">
                     {item.text}
