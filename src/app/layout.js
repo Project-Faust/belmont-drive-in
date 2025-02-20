@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="retro">
+    <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" type="image/x-icon" />
         <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
@@ -26,9 +26,11 @@ export default function RootLayout({ children }) {
       </head>
       <body className="flex flex-col min-h-screen">
         <Navbar />
-        <main className="flex flex-grow flex-col">{children}</main>
+        <main
+          style={{ backgroundColor: "#000066" }}
+          className="flex flex-grow flex-col">{children}</main>
         <Footer />
       </body>
-    </html>
+    </html >
   );
 }
