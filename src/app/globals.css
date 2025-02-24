@@ -4,8 +4,42 @@
 @plugin "daisyui";
 
 .cursor-default {
-  cursor:default;
+  cursor: default;
 }
+
+.bg-bright-red {
+  background-color: #ff1919;
+}
+
+.bg-neutral-blue {
+  background-color: #0000fc;
+}
+
+.bg-pepsi-blue {
+  background-color: #0e0e96;
+}
+
+.bg-star-yellow {
+  background-color: #ffffc8;
+}
+
+.text-star-yellow {
+  color: #ffffc8;
+}
+
+/* .smooch-sans-<uniquifier> {
+  font-family: "Smooch Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.limelight-regular {
+  font-family: "Limelight", serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
 
 /* :root {}
 
