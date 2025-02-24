@@ -5,7 +5,7 @@ export default function NowPlaying() {
     return (
         <section className="flex flex-col items-center justify-start w-full mb-5">
 
-            <div className="text-center my-5">
+            <div className="text-center m-3">
                 <h2 className="text-3xl font-bold">Coming Soon!</h2>
             </div>
 
@@ -25,10 +25,10 @@ export default function NowPlaying() {
                                         rel="noreferrer"
                                         className="text-lg text-blue-600 hover:underline"
                                     >
-                                        <h1 className="font-semibold">{movie.title}</h1>
+                                        <h1 className="text-xl font-semibold">{movie.title}</h1>
                                     </a>
                                 ) : (
-                                    <h1 className="font-semibold">{movie.title}</h1>
+                                    <h1 className="text-xl font-semibold">{movie.title}</h1>
                                 )}
                             </div>
 
