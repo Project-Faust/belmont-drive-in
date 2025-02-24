@@ -40,7 +40,7 @@ export const menuData = {
             { name: "Roy Rogers, Shirley Temple, Cherry Lemon Sundrop, Cherry Lemonade", price: 5.00, size: "32oz" }
         ],
         fountainDrinks: [
-            { name: "Pepsi, Diet Pepsi, Sundrop, Cheerwine, Dr. Pepper, 7UP, Sweet Tea, Lemonade", sizes: { small: 3.00, large: 4.00 } }
+            { name: "Pepsi, Diet Pepsi, Sundrop, Cheerwine, Dr. Pepper, 7Up, Sweet Tea, Lemonade", sizes: { small: 3.00, large: 4.00 } }
         ],
         bottledDrinks: [
             { name: "Bottled Water", price: 2.00 },
