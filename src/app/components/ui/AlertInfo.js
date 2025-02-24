@@ -1,6 +1,6 @@
 export default function AlertInfo() {
     return (
-        <div role="alert" className="alert alert-info flex justify-center mx-auto w-fit">
+        <div role="alert" className="alert alert-warning flex justify-center mx-auto w-fit">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
