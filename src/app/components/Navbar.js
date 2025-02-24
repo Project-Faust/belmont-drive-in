@@ -1,13 +1,12 @@
 "use client";
 
-import { Limelight, Sigmar, Sigmar_One } from "next/font/google"
+import { Limelight } from "next/font/google"
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import HomeButton from "./ui/Button";
 
 const limelight = Limelight({ subsets: ["latin"], weight: "400" });
-const sigmar = Sigmar({ weight: "400" });
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
