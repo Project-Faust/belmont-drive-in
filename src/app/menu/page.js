@@ -25,7 +25,7 @@ export default function Menu() {
 
 
             {Object.entries(menuData).map(([category, items]) => (
-                <div key={category} className="collapse collapse-arrow bg-neutral text-neutral-content w-full max-w-3xl mb-4">
+                <div key={category} className="collapse collapse-arrow bg-secondary text-secondary-content w-full max-w-3xl mb-4">
                     <input type="checkbox" />
                     <div className="collapse-title text-xl font-semibold">
                         {formatCategoryTitle(category)}
@@ -37,7 +37,7 @@ export default function Menu() {
                                 {items.map((item, index) => (
                                     <li key={index} className="py-1">
                                         <span className="font-bold">{item.name}</span> - ${item.price.toFixed(2)}
-                                        {item.description && <p className="text-sm text-gray-400">{item.description}</p>}
+                                        {item.description && <p className="text-sm text-black-400">{item.description}</p>}
                                     </li>
                                 ))}
                             </ul>
@@ -62,7 +62,6 @@ export default function Menu() {
             ))}
 
             <section className="flex flex-col items-center">
-                {/* Allergy Information */}
                 <div className="w-full max-w-3xl mx-auto mb-8">
                     <img
                         id="allergies-and-diet"
