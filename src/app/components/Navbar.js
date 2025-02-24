@@ -1,8 +1,13 @@
 "use client";
 
+import { Limelight, Sigmar, Sigmar_One } from "next/font/google"
+
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import HomeButton from "./ui/Button";
+
+const limelight = Limelight({ subsets: ["latin"], weight: "400" });
+const sigmar = Sigmar({weight: "400"});
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +31,7 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav className="bg-secondary text-secondary-content navbar bg-neutral text-neutral-content shadow-sm">
+        <nav className="bg-bright-red text-primary-content navbar bg-neutral text-neutral-content shadow-sm">
             <div className="navbar-start">
                 <div ref={dropdownRef} className={`dropdown ${isOpen ? "dropdown-open" : ""}`}>
                     <button
@@ -56,7 +61,7 @@ export default function Navbar() {
                     {isOpen && (
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-neutral text-neutral-content rounded-box z-10 mt-3 w-52 p-2 shadow"
+                            className={`menu menu-sm dropdown-content bg-bright-red text-black font-semibold rounded-box z-10 mt-3 w-52 p-2`}
                         >
                             {[
                                 { href: "/", label: "Home" },
@@ -82,8 +87,11 @@ export default function Navbar() {
 
             {/* business name */}
             <div className="navbar-center">
-                <Link href="/" className="btn btn-ghost text-xl">
-                    Belmont Drive-In
+                <Link
+                    href="/"
+                    className={`btn btn-ghost text-2xl ${limelight.className}`}
+                >
+                    <strong>Belmont Drive-In</strong>
                 </Link>
             </div>
 
@@ -91,6 +99,6 @@ export default function Navbar() {
             <div className="navbar-end">
                 <HomeButton />
             </div>
-        </nav>
+        </nav >
     );
 }
