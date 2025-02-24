@@ -31,7 +31,7 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav className="bg-bright-red text-primary-content navbar bg-neutral text-neutral-content shadow-sm">
+        <nav style={{ backgroundColor: "#800000", color: "#ffffff" }} className=" navbar bg-neutral text-neutral-content shadow-sm">
             <div className="navbar-start">
                 <div ref={dropdownRef} className={`dropdown ${isOpen ? "dropdown-open" : ""}`}>
                     <button
@@ -57,11 +57,11 @@ export default function Navbar() {
                         </svg>
                     </button>
 
-                    {/* nav dropdown */}
                     {isOpen && (
                         <ul
                             tabIndex={0}
-                            className={`menu menu-sm dropdown-content bg-bright-red text-black font-semibold rounded-box z-10 mt-3 w-52 p-2`}
+                            style={{ backgroundColor: "#800000", color: "#ffffff" }}
+                            className="menu menu-sm dropdown-content font-semibold rounded-box z-10 mt-3 w-52 p-2 shadow"
                         >
                             {[
                                 { href: "/", label: "Home" },
@@ -85,7 +85,6 @@ export default function Navbar() {
                 </div>
             </div>
 
-            {/* business name */}
             <div className="navbar-center">
                 <Link
                     href="/"

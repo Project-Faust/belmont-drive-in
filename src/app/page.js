@@ -1,3 +1,5 @@
+import { Limelight } from "next/font/google";
+
 import AlertInfo from "./components/ui/AlertInfo";
 import BusinessDetails from "./components/BusinessDetails";
 import MapsEmbed from "./components/google/MapEmbed";
@@ -31,6 +33,6 @@ export default function Home() {
         </div>
       </div>
 
-    </div>
+    </div >
   );
 }
