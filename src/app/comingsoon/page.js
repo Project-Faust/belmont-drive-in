@@ -1,6 +1,10 @@
 import { comingSoon } from "../nowplaying/data";
 import Image from "next/image";
 
+import { Limelight } from "next/font/google";
+
+const limelight = Limelight({ subsets: ["latin"], weight: "400" });
+
 export default function ComingSoon() {
     return (
         <section className="flex flex-col items-center justify-start w-full mb-0">
@@ -8,7 +12,7 @@ export default function ComingSoon() {
             <div
                 style={{ color: "#FFFFFF" }}
                 className="text-center my-3">
-                <h2 className="text-2xl font-bold">Coming Soon!</h2>
+                <h2 className={`text-4xl font-bold ${limelight.className}`}>Coming Soon!</h2>
             </div>
 
             <div className="w-full max-w-screen-xl px-8 mb-2 flex">

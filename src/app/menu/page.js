@@ -2,20 +2,24 @@ import { menuData } from "./data";
 import { formatCategoryTitle } from "../utils/FormatTitle";
 // import menuPoster from "../../../public/images/menu-downscaled.webp";
 
+import { Limelight } from "next/font/google";
+
+const limelight = Limelight({ subsets: ["latin"], weight: "400" });
+
 export default function Menu() {
     return (
-        <section className="min-h-screen flex flex-col items-center justify-start py-12 lg:mx-0 mx-5 ">
+        <section className="min-h-screen flex flex-col items-center justify-start p-5 lg:mx-0 mx-5 ">
 
-            <div className="text-center mb-12">
+            <div className="text-center mb-10">
 
                 <h2
                     style={{ color: "#FFFFFF" }}
-                    className="text-3xl mb-5">
+                    className={`text-4xl mb-5 ${limelight.className}`}>
                     <strong>Menu</strong>
                 </h2>
 
                 <h3
-                    style={{backgroundColor: "#ffffff", color: "#aa0000" }}
+                    style={{ backgroundColor: "#ffffff", color: "#aa0000" }}
                     className="text-2xl py-1 px-5 mb-5 rounded-lg">
                     <a
                         href="#allergies-and-diet"
@@ -29,7 +33,7 @@ export default function Menu() {
 
 
             {Object.entries(menuData).map(([category, items]) => (
-                <div key={category} className="collapse collapse-arrow bg-secondary text-secondary-content w-full max-w-3xl mb-4">
+                <div key={category} className="collapse collapse-arrow bg-white text-secondary-content w-full max-w-3xl mb-4">
                     <input type="checkbox" />
                     <div className="collapse-title text-xl font-semibold">
                         {formatCategoryTitle(category)}

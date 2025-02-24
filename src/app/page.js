@@ -1,5 +1,3 @@
-import { Limelight } from "next/font/google";
-
 import AlertInfo from "./components/ui/AlertInfo";
 import BusinessDetails from "./components/BusinessDetails";
 import MapsEmbed from "./components/google/MapEmbed";
@@ -10,7 +8,7 @@ const limelight = Limelight({ subsets: ["latin"], weight: "400" });
 
 export default function Home() {
   return (
-    <div className="mx-5 my-12">
+    <div className="mx-5 my-10">
       {/* <section className="mx-auto"> */}
       <header className={`w-fit mx-auto bg-white text-black text-center rounded-lg p-5 ${limelight.className}`}>
         <h1 className="text-4xl mb-3">Welcome to the Belmont Drive-In Theatre</h1>
@@ -24,7 +22,9 @@ export default function Home() {
       </section>
 
       <div className="flex flex-col lg:flex-row justify-evenly items-center">
-        <main className="mx-2">
+        <main
+          style={{ backgroundColor: "#000050" }}
+          className="rounded-lg mx-2">
           <BusinessDetails />
         </main>
 

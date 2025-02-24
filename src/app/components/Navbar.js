@@ -7,7 +7,7 @@ import Link from "next/link";
 import HomeButton from "./ui/Button";
 
 const limelight = Limelight({ subsets: ["latin"], weight: "400" });
-const sigmar = Sigmar({weight: "400"});
+const sigmar = Sigmar({ weight: "400" });
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +31,10 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav style={{ backgroundColor: "#800000", color: "#ffffff" }} className=" navbar bg-neutral text-neutral-content shadow-sm">
+        <nav
+            // style={{ backgroundColor: "#800000", color: "#ffffff" }}
+            className=" navbar bg-bright-red text-black shadow-sm"
+        >
             <div className="navbar-start">
                 <div ref={dropdownRef} className={`dropdown ${isOpen ? "dropdown-open" : ""}`}>
                     <button
@@ -60,8 +63,8 @@ export default function Navbar() {
                     {isOpen && (
                         <ul
                             tabIndex={0}
-                            style={{ backgroundColor: "#800000", color: "#ffffff" }}
-                            className="menu menu-sm dropdown-content font-semibold rounded-box z-10 mt-3 w-52 p-2 shadow"
+                            // style={{ backgroundColor: "#800000", color: "#ffffff" }}
+                            className="bg-bright-red text-black menu menu-sm dropdown-content font-semibold rounded-box z-10 mt-3 w-52 p-2 shadow"
                         >
                             {[
                                 { href: "/", label: "Home" },
